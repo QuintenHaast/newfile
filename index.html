@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Food & Drink Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3F1F23; /* Set the background color to match the image */
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-image: url('skyline.jpg'); /* Ensure the image path is correct */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: 'Playfair Display', Arial, sans-serif; /* Apply the Playfair Display font */
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+            z-index: 1;
+        }
+        header h1, header h3 {
+            position: relative;
+            z-index: 2;
+        }
+        nav {
+            text-align: center;
+            background-color: #800020; /* Background color for the nav container */
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav p {
+            margin: 0;
+            padding: 0 10px;
+            color: white; /* Make the text white */
+            font-family: 'Playfair Display', Arial, sans-serif;
+            font-size: 1em; /* Ensure the text scales properly on mobile */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+            font-size: 1em; /* Adjusted for better readability on mobile */
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #3F1F23; /* Set the container background color */
+        }
+        .image-section {
+            text-align: center;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-section .text-content {
+            color: white;
+            padding: 0 20px;
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .contact-info {
+            text-align: center;
+            padding: 20px;
+            background-color: #800020;
+            color: white;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            nav p {
+                font-size: 0.9em; /* Slightly smaller font on small screens */
+            }
+            nav a {
+                font-size: 0.9em; /* Slightly smaller font on small screens */
+                padding: 8px 12px;
+            }
+            header {
+                padding: 30px 10px;
+            }
+            .container {
+                padding: 10px;
+            }
+            .image-section .text-content {
+                padding: 0 10px;
+            }
+            .contact-info {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Food & Drink Guide</h1>
+        <h3>Barcelona</h3>
+    </header>
+    <nav>
+        <p>What are you looking for?</p> <!-- The sentence in the same bar as the clickable links -->
+        <a href="dinner.html">Dinner</a>
+        <a href="brunch.html">Brunch</a>
+        <a href="tapas.html">Tapas</a>
+        <a href="drinks.html">Drinks</a>
+    </nav>
+    <div class="container">
+        <div class="image-section">
+            <div class="text-content">
+                <p>In 2024, I moved to Barcelona with my girlfriend. We are huge fans of the culture, the food, and the coziness. We both have a passion for gastronomy. On this website, we share our experiences with various places we have visited. An important detail is that we only share positive experiences on this website, which means that every restaurant listed here is an absolute must-visit. You can keep track of our journey in Barcelona through the social media platforms listed at the bottom of the page. We will definitely continue to share our experiences and keep the locations on this website updated!</p>
+            </div>
+            <img src="logo.webp" alt="BCN The Food & Drink Guide">
+        </div>
+        <div class="contact-info">
+            <p>Contact Information:</p>
+            <p>Instagram: TheFood&DrinkGuideBCN</p>
+            <p>TikTok: <a href="https://www.tiktok.com/@celineswinkels_?_t=8nKWrQErMEi&_r=1" target="_blank">https://www.tiktok.com/@celineswinkels_?_t=8nKWrQErMEi&_r=1</a></p>
+            <p>Mail: foodanddrinkguidebcn@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
